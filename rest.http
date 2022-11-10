@@ -1,0 +1,23 @@
+GET http://localhost:4000/
+
+###
+POST http://localhost:4000/create-pix
+Content-Type: application/json
+
+{
+  "amount": 1,
+  "address": "0x12983589123467219452",
+  "network": "polygon"
+}
+
+
+###
+POST http://localhost:4000/verify-pix
+Content-Type: application/json
+
+{
+  "id": 25653442074
+}
+
+###
+POST http://localhost:4000/create-pix-table
